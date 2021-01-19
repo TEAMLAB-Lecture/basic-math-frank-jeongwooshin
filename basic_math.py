@@ -94,7 +94,11 @@ def get_median(number_list):
     if len(number_list)%2 == 0:
         tmp = len(number_list)//2
         median = (number_list[tmp-1]+number_list[tmp])/2
+        print(tmp, median)
     else:
         tmp = len(number_list)//2
-        median = number_list[tmp-1]
+        median = number_list[tmp]
+        print(tmp, median)
     return median
+l = [6, 93, 23, 7, 3, 99, 36, 51, 70, 89, 5]
+print(get_median(l))
